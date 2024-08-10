@@ -1,0 +1,85 @@
+:root {
+    --background-color: gray;
+    --primary-color: #191913;
+    --secondary-color: yellow;
+    --accent-color: #b041b0;
+    --text-color: #fff;
+    --winner-color: darkred;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: lightyellow;
+}
+
+.new, .resetB {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new:hover, .resetB:hover {
+    background-color: darkgray;
+}
+
+.win {
+    font-size: 5vmin;
+    color: var(--winner-color);
+}
+
+.mescont {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
